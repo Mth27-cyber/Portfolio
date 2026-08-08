@@ -134,7 +134,8 @@ display: inline-flex;
 .About{
     color: #C0C0C0;
     text-wrap: balance;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.02em;
   font-size: 1.1rem;
 }
 .bg{
@@ -147,10 +148,12 @@ display: inline-flex;
 
 }
 .Name1{
-    color:#ffffff;
+   color: #e2e8f0;
     font-size: clamp(3.5rem, 8vw, 7rem);
     line-height: 0.9;   
   margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 .text{
     margin-top: 0;         
@@ -159,9 +162,61 @@ display: inline-flex;
   color:aliceblue;
 }
 .hero-image{
-    width: 100%;          /* Adjusts image to fill its container */
-  max-width: 400px;     /* Sets a maximum size */
-  height: auto;         /* Maintains original image proportions */
-  border-radius: 1000px;  /* Optional: adds smooth rounded corners */
-  object-fit: cover;    /* Prevents image distortion */
+    width: 100%;       
+  max-width: 500px;         
+  border-radius: 100%; 
+  object-fit: cover;
+   float: right;
+   margin-top: -100px;
+   margin-right: 1.5rem; 
+}
+.Welcome{
+  background:linear-gradient(135deg, #00d2ff 0%, #6c5ce7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+/* Container layout */
+.social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Circular Gradient-Border Button */
+.circle-btn {
+  /* Fix dimensions to make a perfect circle */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  
+  /* Flexbox to perfectly center icons */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Typography / Icon Styling */
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  
+  /* Gradient Border Setup */
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(#0b0b12, #0b0b12) padding-box, /* Inner dark fill */
+    linear-gradient(135deg, #00d2ff 0%, #6c5ce7 100%) border-box; /* Outer gradient */
+  
+  /* Smooth Hover Transition */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover & Active Effects */
+.circle-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(108, 92, 231, 0.5), 0 0 30px rgba(0, 210, 255, 0.4);
+}
+
+.circle-btn:active {
+  transform: translateY(0);
 }

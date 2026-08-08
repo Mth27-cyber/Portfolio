@@ -108,28 +108,7 @@ display: inline-flex;
     background-color:transparent;
     box-shadow: 0 0 20px rgba(0,255,255);
 }
-.Name{
 
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  
-  /* Giant Sizing & Styling */
-  font-size: clamp(8rem, 20vw, 22rem); /* Scales dynamically with screen size */
-  font-weight: 900;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  
-  /* Faint Opacity Effect */
-  color: #1a1a2e; /* Slightly lighter than the dark section background */
-  opacity: 0.15;   /* Keep opacity low (10%-20%) for a subtle look */
-  /* Make sure it stays behind content and doesn't interfere with mouse clicks */
-  z-index: 0;
-  pointer-events: none;
-  user-select: none;
-}
 
 .About{
     color: #C0C0C0;
@@ -141,9 +120,9 @@ display: inline-flex;
 .bg{
    background-color: #05070f;
    background-image: 
-    radial-gradient(circle at 15% 15%, rgba(0, 210, 255, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 85% 20%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 50% 80%, rgba(0, 150, 255, 0.08) 0%, transparent 60%);
+    radial-gradient(circle at 15% 15%, rgba(22, 91, 106, 0.552) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(96, 85, 183, 0.534) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(129, 186, 226, 0.08) 0%, transparent 60%);
   background-attachment: fixed;
 
 }
@@ -163,51 +142,44 @@ display: inline-flex;
 }
 .hero-image{
     width: 100%;       
-  max-width: 500px;         
+  max-width: 400px;         
   border-radius: 100%; 
+  justify-content: flex-end;
+  margin-left: auto;
   object-fit: cover;
-   float: right;
-   margin-top: -100px;
-   margin-right: 1.5rem; 
+  float:right;
+   
+   border-color: #00d2ff;
 }
 .Welcome{
-  background:linear-gradient(135deg, #00d2ff 0%, #6c5ce7 100%);
+  display: inline-block;
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #c084fc);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-/* Container layout */
+
 .social-links {
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
-/* Circular Gradient-Border Button */
 .circle-btn {
-  /* Fix dimensions to make a perfect circle */
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  
-  /* Flexbox to perfectly center icons */
+  margin-top:10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
-  /* Typography / Icon Styling */
   color: #ffffff;
   font-size: 1.2rem;
   text-decoration: none;
-  
-  /* Gradient Border Setup */
   border: 2px solid transparent;
-  background: 
-    linear-gradient(#0b0b12, #0b0b12) padding-box, /* Inner dark fill */
-    linear-gradient(135deg, #00d2ff 0%, #6c5ce7 100%) border-box; /* Outer gradient */
-  
-  /* Smooth Hover Transition */
+  background: linear-gradient(#0b0b12, #0b0b12) padding-box,
+    linear-gradient(135deg, #00d2ff 0%, #6c5ce7 100%) border-box;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -219,4 +191,32 @@ display: inline-flex;
 
 .circle-btn:active {
   transform: translateY(0);
+}
+.git{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-top:0px;
+}
+.photo{
+  width: 100%;       
+  max-width: 400px;  
+  float:right;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: -150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 5px solid transparent;
+  background: linear-gradient(#0b0b12, #0b0b12) padding-box,
+    linear-gradient(135deg, #00d2ff 0%, #6c5ce7 100%) border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.photo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(108, 92, 231, 0.5), 0 0 30px rgba(0, 210, 255, 0.4);
 }

@@ -220,3 +220,168 @@ display: inline-flex;
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(108, 92, 231, 0.5), 0 0 30px rgba(0, 210, 255, 0.4);
 }
+.l1{
+  margin-bottom: 40px;
+  text-align:center ;
+ display: inline-block;
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.a{
+  color: white;
+   text-align:center ;
+}
+.b{
+  color: white;
+  text-align: center;
+}
+.c{
+  color: #c9d1d9;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+    text-wrap: balance;
+    text-align:left;
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.02em;
+    max-width: 550px;
+  font-size: 1.1rem;
+}
+.c strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+.d{
+  float:right;
+}
+.Skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  background: rgba(10, 14, 23, 0.85); 
+  border: 1px transparent #0d8b8b; 
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.Skills:hover{
+ transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(108, 92, 231, 0.5), 0 0 30px rgba(0, 210, 255, 0.4);
+}
+.e{
+  margin-top:500px ;
+
+   color: white;
+   gap: 1.5rem;
+  padding:1.5rem;
+  float:center;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.skill-name {
+  gap: 1.5rem;
+  color: #a0aec0; 
+  display: flex;
+ 
+  padding:1.5rem; ;
+  justify-content: space-between; /* Spreads title and percentage apart */
+  align-items: center;
+  font-weight: 500;
+ height: 4px;
+}
+
+.skill-percentage {
+  color: #a0aec0;
+  font-weight: 500;
+  height: auto;
+}
+/* Outer Track (Dark Background Line) */
+.progress-bar-track {
+  width: 100%;                          /* Full width of the container */
+  height: 4px;                          /* Thin line height */
+  background-color: rgba(255, 255, 255, 0.08); /* Dark subtle track */
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;                      /* Spacing above the bar */
+}
+.progress-bar-track > div,
+.progress-bar-track .fill {
+  height: 100%;
+  width: 60% !important; /* 👈 Adjust this percentage to shorten the orange line */
+  border-radius: 4px;
+}
+/* Inner Fill (Gradient Progress Line) */
+.progress-bar-fill {
+  height: 100%;                         /* Takes full height of the 4px track */
+  width: 70%;                           /* 👈 DECREASE THIS VALUE to make orange line shorter (e.g., 60%, 75%) */
+  border-radius: 4px;
+  
+  /* Vibrant Orange/Red Gradient */
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%); 
+  
+  /* Smooth animation when changing width */
+  transition: width 0.4s ease;
+}
+.progress-bar-fill2 {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #0d85e0, #1e00ff); /* Coral to Orange gradient */
+  transition: width 0.5s ease-in-out; /* Smooth transition when value changes */
+}
+.Frontend{
+  gap: 1.5rem;
+  padding: 1.5rem;
+  color:white;
+   display: flex;
+  justify-content: space-between; /* Spreads title and percentage apart */
+  align-items: center;
+}
+.progress-bar-fill3 {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #e0d20d, #ff0202); /* Coral to Orange gradient */
+  transition: width 1s ease-in-out; /* Smooth transition when value changes */
+}
+.Tech{
+   margin-top:500px ;
+
+   color: white;
+   gap: 1.5rem;
+  padding:1.5rem;
+  float:center;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.sk{
+   padding: 0.75rem 1.5rem; 
+  font-size: 1.1rem;
+  font-weight: 100;
+  border: 1px solid#0ccaff ;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+   
+}
+.ski{
+  display:flex;
+ justify-content:space-evenly;
+ align-items : center;
+ margin-top: 100px;
+}
+.Projects{
+     margin-top:100px ;
+   color: white;
+   gap: 1.5rem;
+  padding:1.5rem;
+  float:center;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
